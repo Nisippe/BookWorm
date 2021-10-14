@@ -1,0 +1,379 @@
+{
+  "id": "147001db-7ef1-4227-bae0-886fac19796c",
+  "version": "2.0",
+  "name": "VisualizzaLibro",
+  "url": "http://localhost:8080/codiceProgetto_war_exploded/",
+  "tests": [{
+    "id": "be833939-0076-409e-be61-50e81eff586e",
+    "name": "TC_9_01",
+    "commands": [{
+      "id": "0de800f1-85e1-4045-bafd-9734dc2a6679",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/codiceProgetto_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "255cc84a-a2d0-4eb1-8b88-248277f7a73b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12668a21-61d7-4b7b-9074-1c257b17035a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.bottone1:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab99955d-c01a-4456-b732-778abd72a8e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) > .col",
+      "targets": [
+        ["css=.row:nth-child(3) > .col", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad0ce243-4195-4100-a61e-70c6b7db7d86",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.row:nth-child(3) > .col",
+      "targets": [
+        ["css=.row:nth-child(3) > .col", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f05dbb8-a8b9-4f23-b62c-26b5282340c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a7f3d56-454f-442e-b8de-1f44db61de09",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nisippe1"
+    }, {
+      "id": "8c680f69-5cc2-4552-b301-f35495f4634c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Grtanda1"
+    }, {
+      "id": "32a519ff-fa5a-4a5d-9b6d-ef6d05c06898",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0519e49f-a8c7-473e-a7e5-6ae54122e845",
+      "comment": "",
+      "command": "click",
+      "target": "id=param",
+      "targets": [
+        ["id=param", "id"],
+        ["name=param", "name"],
+        ["css=#param", "css:finder"],
+        ["xpath=//select[@id='param']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f00bf72e-282e-458b-84fd-8666a33fa183",
+      "comment": "",
+      "command": "select",
+      "target": "id=param",
+      "targets": [],
+      "value": "label=Libro"
+    }, {
+      "id": "d27df2fb-0e9b-4dea-8c0d-8676e094b424",
+      "comment": "",
+      "command": "click",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f10134-6134-4904-9ef4-4ef2fca6d9fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dragon"
+    }, {
+      "id": "1a792574-b968-4400-9603-f3bebf97c204",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6c1efc74-e4c6-419b-9104-ed6337d1c59f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center img",
+      "targets": [
+        ["css=.text-center img", "css:finder"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9556f9ec-dfdb-4b46-ba29-9d5a94b497f3",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "",
+      "targets": [],
+      "value": "Libro inesistente"
+    }]
+  }, {
+    "id": "8ab06015-dd33-46e7-b70d-4a9cd0231a91",
+    "name": "TC_9_02",
+    "commands": [{
+      "id": "012b6cc8-12c6-4ee2-98ce-7395a8b21b67",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/codiceProgetto_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dee4ba7-1189-4de8-8834-d74819a2c71e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e2db0dc-01c8-42b9-bd0f-b145d020ad72",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.bottone1:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dae34115-d5eb-4feb-b190-2c171910d1a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) > .col",
+      "targets": [
+        ["css=.row:nth-child(3) > .col", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8296205a-8777-407a-ac8d-ec033ae92cb8",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.row:nth-child(3) > .col",
+      "targets": [
+        ["css=.row:nth-child(3) > .col", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31970857-75bf-4c06-adc9-23121a962933",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99bd6672-fbfc-47a3-acc7-f3bfa5275f4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nisippe1"
+    }, {
+      "id": "b03b7f8e-6487-4dbe-9df8-fca45487d27e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Grtanda1"
+    }, {
+      "id": "2f27c34a-46fc-44d0-8b9b-9f6fbbe8b8f5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "02b8b370-8afc-4dbb-98f5-130c891df898",
+      "comment": "",
+      "command": "click",
+      "target": "id=param",
+      "targets": [
+        ["id=param", "id"],
+        ["name=param", "name"],
+        ["css=#param", "css:finder"],
+        ["xpath=//select[@id='param']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8998d64e-8f81-41ba-a1e0-130ba963340b",
+      "comment": "",
+      "command": "select",
+      "target": "id=param",
+      "targets": [],
+      "value": "label=Libro"
+    }, {
+      "id": "569b51cc-44ea-4f49-88d2-2c4619e40707",
+      "comment": "",
+      "command": "click",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f09aa5c5-5b93-4ef2-ad0a-e73c51ed340b",
+      "comment": "",
+      "command": "type",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dragon"
+    }, {
+      "id": "b94b5a6f-f645-4599-97bc-b12d744ed161",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a9272a89-2f01-4e11-a471-1916cf2df630",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center img",
+      "targets": [
+        ["css=.text-center img", "css:finder"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6a19040-6ab2-4224-96b7-e7fe68605e35",
+      "comment": "",
+      "command": "assertText",
+      "target": "",
+      "targets": [],
+      "value": "Libro visualizzato"
+    }]
+  }],
+  "suites": [{
+    "id": "facbfbc6-a6f8-4a99-913f-d7d139c7f2d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be833939-0076-409e-be61-50e81eff586e"]
+  }],
+  "urls": [],
+  "plugins": []
+}
