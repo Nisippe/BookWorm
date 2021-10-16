@@ -1,0 +1,317 @@
+{
+  "id": "50fcb869-4ab6-42ee-abc9-f6ee3c1e3653",
+  "version": "2.0",
+  "name": "ModificaProfilo",
+  "url": "http://localhost:8080/codiceProgetto_war_exploded/index.jsp",
+  "tests": [{
+    "id": "fbd6b555-449f-48fa-941d-1b7daf163a63",
+    "name": "TC_15_01",
+    "commands": [{
+      "id": "f2077c53-d36c-4504-bbe5-ca66f6190d29",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/codiceProgetto_war_exploded/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c796c7b6-c2bf-49dd-8003-22d3ea2d5a88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fe6bd10-7a13-40e0-8a64-80f0ebc8a89f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.bottone1:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ab5b81-64d4-44ac-a027-4469a37bbdc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dba2562-185b-480c-8296-6ab29e743974",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nisippe1"
+    }, {
+      "id": "6fd7201f-d72c-4552-bc16-de1b451221ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Grtanda1"
+    }, {
+      "id": "50a53719-8743-4a2a-80a4-d65e75e9d2ed",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7b2cc903-2b45-48f4-80a1-548603fdae59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand:nth-child(2) > img",
+      "targets": [
+        ["css=.navbar-brand:nth-child(2) > img", "css:finder"],
+        ["xpath=//nav/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "468c8186-2217-4613-9040-f015a38733a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MODIFICA",
+      "targets": [
+        ["linkText=MODIFICA", "linkText"],
+        ["css=.col:nth-child(1) > .bottone3", "css:finder"],
+        ["xpath=//a[contains(text(),'MODIFICA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'ModificaProfilo.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a73e285f-1493-4726-bdb8-6b1524b99243",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12354897-7834-4e37-ae22-3adfa8145839",
+      "comment": "",
+      "command": "type",
+      "target": "id=bio",
+      "targets": [
+        ["id=bio", "id"],
+        ["name=bio", "name"],
+        ["css=#bio", "css:finder"],
+        ["xpath=//textarea[@id='bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dca1e40e-bd37-404e-a874-72f6e2d42947",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifica",
+      "targets": [
+        ["id=modifica", "id"],
+        ["css=#modifica", "css:finder"],
+        ["xpath=//input[@id='modifica']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "616c0adb-9497-44a6-979c-417792100b37",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "",
+      "targets": [],
+      "value": "Form non valido"
+    }]
+  }, {
+    "id": "c9b94bb5-d051-4523-995a-ba7c58b388c8",
+    "name": "TC_15_02",
+    "commands": [{
+      "id": "87ac6479-da6d-4ba9-adfc-c61be92fcc04",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/codiceProgetto_war_exploded/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce70cd47-5b39-41d3-aa13-d7e1d3c8f936",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8e4a661-6589-4c6c-badf-5d8c0f504993",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.bottone1:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.jsp')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d443b5eb-1492-4409-b0c1-069b2dcc7468",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c44d8f-5edd-4f39-a4db-011e1a49e88c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nisippe1"
+    }, {
+      "id": "f6f2f277-70bd-49b8-9c4e-95b362f6c86d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Grtanda1"
+    }, {
+      "id": "8f1efcee-6e42-48cc-85c9-3b42481c17ca",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6dceeb77-ad19-48f4-b3ba-b979a399c253",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand:nth-child(2) > img",
+      "targets": [
+        ["css=.navbar-brand:nth-child(2) > img", "css:finder"],
+        ["xpath=//nav/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dcad8c4-d975-4371-ba2a-a13de8749ece",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MODIFICA",
+      "targets": [
+        ["linkText=MODIFICA", "linkText"],
+        ["css=.col:nth-child(1) > .bottone3", "css:finder"],
+        ["xpath=//a[contains(text(),'MODIFICA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'ModificaProfilo.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "939afa82-6dfb-4aec-b7fc-45d6e611e142",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a8b65c9-5ffd-4add-ae4f-a2d04b9d8769",
+      "comment": "",
+      "command": "type",
+      "target": "id=bio",
+      "targets": [
+        ["id=bio", "id"],
+        ["name=bio", "name"],
+        ["css=#bio", "css:finder"],
+        ["xpath=//textarea[@id='bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "aaa"
+    }, {
+      "id": "1d6f8766-5afc-4692-ac2f-8b498ae3967c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modifica",
+      "targets": [
+        ["id=modifica", "id"],
+        ["css=#modifica", "css:finder"],
+        ["xpath=//input[@id='modifica']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef9923d-feed-478c-b961-0c4d1acbbcaa",
+      "comment": "",
+      "command": "assertText",
+      "target": "",
+      "targets": [],
+      "value": "Profilo Modificato"
+    }]
+  }],
+  "suites": [{
+    "id": "498eda30-6109-4f38-af52-485287777323",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fbd6b555-449f-48fa-941d-1b7daf163a63"]
+  }],
+  "urls": [],
+  "plugins": []
+}
